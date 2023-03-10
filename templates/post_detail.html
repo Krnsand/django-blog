@@ -95,6 +95,7 @@
                 {% endfor %}
             </div>
         </div>
+
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
                 <!-- For later -->
@@ -110,7 +111,7 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <!-- important for form security, use for own project -->
+                    <!-- csrf_token important for form security, use for own project -->
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% endif %}
